@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="img/icrc.png" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--Iconos-->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Cruz Roja
+    </title>
+  </head>
+
+
+  <body>
+    <!--Barra de navegacion principal-->
+    <div class="navegacion">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white" style="padding-bottom: 0px;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="img/logo.jpg" alt="" width="75px">
+          </a>
+          <a class="navbar-brand" href="index.html">
+            <img src="img/ICRC.jpg" alt="" width="75px">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                  aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+            </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link activo" aria-current="page" href="#">SEARCH
+              </a>
+              <a class="nav-link nava" href="#">VISUALIZE
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!--Barra gris con texto-->
+    <div class="bg-secondary text-white" style="margin: 0; padding: 15px 0px 5px 0px; text-align:center">
+      <p>Explore past issues of the Newsletter! Use the Search Tab to search through the articles using keywords and
+        filter according to your preference.
+        Use the Visualize tab to browser thtough some graphs 
+      </p>
+    </div>
+    <!--Barra de filtrado-->
+
+    
+      </div>
+
+    <div  style=" background-color: rgb(235, 235, 235); padding: 5px; padding-bottom: 25px; margin-right: 0;">
+    <div class="container">
+      <div class="row mt-3">
+        <div class="col-4 mt-2 ">
+            <form>
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Enter the text to search here">
+                  <div class="input-group-btn boton">
+                    <button class="btn btn-default" type="submit">
+                        <i
+                        class="fa fa-search" style="color: red;">
+                     </i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+              
+        </div>
+        <div class="col  mt-3">
+          Date:
+          <input type="date" id="start" name="trip-start" value="2020-12-10" min="1889-12-10" max="2020-12-10" style="width: 77%">
+          
+        </div>
+    
+        <div class="col ">
+           <input type="range" class="form-range mt-3"  id="customRange1">
+        </div>
+        <div class="col  mt-3">
+          Date:
+          <input type="date" id="start" name="trip-start" value="2020-12-10" min="1889-12-10" max="2020-12-10" style="width: 77%;" >
+        </div>
+       
+        <div class="col  ">
+          <button type="button" class="btn btn-secondary mt-2"> <img src="img/icono.svg"> EXPORT RESULTS
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    </div>
+  </div>
+    <!--Contenedor  -->
+    <div class="container ">
+        <div class="row">
+            <div class="col-4 " style=" background-color: rgb(246, 246, 246); ">
+                 <!--categoria -->
+                <h4 style="position: absolute; padding-top: 2%;">CATEGORY
+                </h4>
+  <!--categoria -->
+            </div>
+            <!--Barra filtrado arriba del card -->
+            <div class="col-8 ">
+                <div style="position: relative; padding-top: 20px;">
+                    <input type="checkbox" class="btn-check" id="btncheck1"  autocomplete="off"  >
+                    <label class="btn btn-outline-secondary" style="border-radius: 20px;"  for="btncheck1">Category 1 x</label>
+                  
+                    <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                    <label class="btn btn-outline-secondary" style="border-radius: 20px;" for="btncheck2" >Category 2 x</label>
+                  
+                    <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                    <label class="btn btn-outline-secondary" style="border-radius: 20px; " for="btncheck3">Subcategory 1 x</label>
+
+                    <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
+                    <label class="btn btn-outline-secondary" style="border-radius: 20px; " for="btncheck4">Subcategory 2 x</label>
+
+                    <input type="checkbox" class="btn-check" id="btncheck5" autocomplete="off" >
+                    <label class="btn btn-outline-secondary" style="border-radius: 20px; " for="btncheck5">Country 1 x</label>
+                    
+                    <input type="checkbox" class="btn-check" id="btncheck5" autocomplete="off" >
+                    <label class="btn btn-outline-secondary" style="border-radius: 20px; " for="btncheck5">Country 2 x</label>
+
+                </div>
+            </div>
+        </div>
+      <!--Barra filtrado arriba del card -->
+      
+      <div class="row">
+        <div class="col-4 pt-4" style=" background-color: rgb(246, 246, 246); padding: 5px; min-width:700 ;">
+
+          <form>
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="search for a category">
+              <div class="input-group-btn">
+                <button class="btn btn-default" type="submit">
+                    <i
+                    class="fa fa-search" style="color: red;">
+                 </i>
+                </button>
+              </div>
+            </div>
+          </form>
+          
+          <div class="form-control border-0" style=" background-color: rgb(246, 246, 246);">
+            <div class="d-grid gap-2">
+              <input type="checkbox" class="btn-check   " id="btn-check-0-outlined">
+              <label class="btn btn-outline-secondary btn-" for="btn-check-0-outlined">
+                <b>X 
+                </b>Uncheak All
+              </label>
+              <br>
+            </div>
+            <div class="d-grid gap-2 col-10 mx-auto">            
+              <input type="checkbox" class="btn-check " id="btn-check-1-outlined">
+              <label class="btn btn-outline-secondary" style="border-radius: 20px;" for="btn-check-1-outlined">
+                <i class="fa fa-check" aria-hidden="true">
+                </i> CATEGORY 1
+              </label>
+              <input type="checkbox" class="btn-check" id="btn-check-2-outlined">
+              <label class="btn btn-outline-secondary" style="border-radius: 20px;" for="btn-check-2-outlined">
+                <i class="fa fa-check" aria-hidden="true">
+                </i> CATEGORY 2
+              </label>
+              <input type="checkbox" class="btn-check" id="btn-check-3-outlined">
+              <label class="btn btn-outline-secondary" style="border-radius: 20px;" for="btn-check-3-outlined">
+                <i class="fa fa-check" aria-hidden="true">
+                </i> CATEGORY 3
+              </label>
+              <input type="checkbox" class="btn-check" id="btn-check-4-outlined">
+              <label class="btn btn-outline-secondary" style="border-radius: 20px;" for="btn-check-4-outlined">
+                <i class="fa fa-check" aria-hidden="true">
+                </i> CATEGORY 4
+              </label>
+              <input type="checkbox" class="btn-check" id="btn-check-5-outlined">
+              <label class="btn btn-outline-secondary" style="border-radius: 20px;" for="btn-check-5-outlined">
+                <i class="fa fa-check" aria-hidden="true">
+                </i> CATEGORY 5
+              </label>
+            </div>
+            <h6 class="float-end pt-4">
+              <b>125 CATEGORIES 
+              </b>
+            </h6> 
+          </div>
+          <br>
+          <br>
+          <hr> 
+          <!--categoria -->
+          <!--Subcategoria -->
+          <h4>SUBCATEGORY
+          </h4>
+          <form>
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="search for a subcategory">
+              <div class="input-group-btn">
+                <button class="btn btn-default" type="submit">
+                    <i
+                    class="fa fa-search" style="color: red;">
+                 </i>
+                </button>
+              </div>
+            </div>
+          </form>
+          <div class="form-control border-0" style=" background-color: rgb(246, 246, 246);">
+            <div class="d-grid gap-2">
+              <input type="checkbox" class="btn-check   " id="btn-check-0-outlined">
+              <label class="btn btn-outline-secondary btn-" for="btn-check-0-outlined">
+                <b>X 
+                </b>Uncheak All
+              </label>
+              <br>
+            </div>
+            <div class="d-grid gap-2 col-10 mx-auto">            
+              <input type="checkbox" class="btn-check" id="btn-check-1-outlined">
+              <label class="btn btn-outline-secondary" style="border-radius: 20px;" for="btn-check-1-outlined">
+                <i class="fa fa-check" aria-hidden="true">
+                </i> SUBCATEGORY 1
+              </label>
+              <input type="checkbox" class="btn-check" id="btn-check-2-outlined">
+              <label class="btn btn-outline-secondary" style="border-radius: 20px;" for="btn-check-2-outlined">
+                <i class="fa fa-check" aria-hidden="true">
+                </i> SUBCATEGORY 2
+              </label>
+              <input type="checkbox" class="btn-check" id="btn-check-3-outlined">
+              <label class="btn btn-outline-secondary" style="border-radius: 20px;" for="btn-check-3-outlined">
+                <i class="fa fa-check" aria-hidden="true">
+                </i> SUBCATEGORY 3
+              </label>
+              <input type="checkbox" class="btn-check" id="btn-check-4-outlined">
+              <label class="btn btn-outline-secondary" style="border-radius: 20px;" for="btn-check-4-outlined">
+                <i class="fa fa-check" aria-hidden="true">
+                </i> SUBCATEGORY 4
+              </label>
+              <input type="checkbox" class="btn-check" id="btn-check-5-outlined">
+              <label class="btn btn-outline-secondary" style="border-radius: 20px;" for="btn-check-5-outlined">
+                <i class="fa fa-check" aria-hidden="true">
+                </i> SUBCATEGORY 5
+              </label>
+            </div>
+            <h6 class="float-end pt-4">
+              <b>225 SUBCATEGORIES 
+              </b>
+            </h6> 
+          </div>
+          <br>
+          <br>
+          <hr>
+          <!--Subcategoria -->
+          <!--Country -->
+          <h4>Country
+          </h4>
+          <form>
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="search for a country">
+              <div class="input-group-btn">
+                <button class="btn btn-default" type="submit">
+                    <i
+                    class="fa fa-search" style="color: red;">
+                 </i>
+                </button>
+              </div>
+            </div>
+          </form>
+          <div class="form-control border-0" style=" background-color: rgb(246, 246, 246);">
+            <div class="d-grid gap-2">
+              <input type="checkbox" class="btn-check   " id="btn-check-0-outlined">
+              <label class="btn btn-outline-secondary btn-" for="btn-check-0-outlined">
+                <b>X 
+                </b>Uncheak All
+              </label>
+              <br>
+            </div>
+            <div class="d-grid gap-2 col-10 mx-auto">            
+              <input type="checkbox" class="btn-check" id="btn-check-1-outlined">
+              <label class="btn btn-outline-secondary" style="border-radius: 20px;" for="btn-check-1-outlined">
+                <i class="fa fa-check" aria-hidden="true">
+                </i>COUNTRY 1
+              </label>
+              <input type="checkbox" class="btn-check" id="btn-check-2-outlined">
+              <label class="btn btn-outline-secondary" style="border-radius: 20px;" for="btn-check-2-outlined">
+                <i class="fa fa-check" aria-hidden="true">
+                </i> COUNTRY 2
+              </label>
+              <input type="checkbox" class="btn-check" id="btn-check-3-outlined">
+              <label class="btn btn-outline-secondary" style="border-radius: 20px;" for="btn-check-3-outlined">
+                <i class="fa fa-check" aria-hidden="true">
+                </i> CCOUNTRY 3
+              </label>
+              <input type="checkbox" class="btn-check" id="btn-check-4-outlined">
+              <label class="btn btn-outline-secondary" style="border-radius: 20px;" for="btn-check-4-outlined">
+                <i class="fa fa-check" aria-hidden="true">
+                </i> COUNTRY 4
+              </label>
+              <input type="checkbox" class="btn-check" id="btn-check-5-outlined">
+              <label class="btn btn-outline-secondary" style="border-radius: 20px;" for="btn-check-5-outlined">
+                <i class="fa fa-check" aria-hidden="true">
+                </i> COUNTRY 5
+              </label>
+            </div>
+            <h6 class="float-end pt-4">
+              <b>90 CONTRIES 
+              </b>
+            </h6> 
+          </div>
+          <br>
+          <br>
+          <hr>
+          <!--Country -->
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Display result english only
+            </label>
+          </div>
+        </div>
+        
+      
+        <!--Cards-->
+        <div class="col-8">
+          <div class="mt-5">
+            <!--Card 1-->
+            <div class="card mt-3 " style="background-color: rgb(241, 241, 241);">
+              <div class="card-header">
+                <div>
+                  Special title treatment 
+                  <p class="card-subtitle text-muted float-end">
+                    <script>
+                      var f = new Date();
+                      document.write(f.getDate() + "/" + (f.getMonth() + 1) + "/" + f.getFullYear());
+                    </script>
+                  </p>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste illum praesentium odit
+                  animi tenetur quidem aliquid ea illo, minima aspernatur perferendis porro rerum iusto, incidunt quae
+                  reprehenderit temporibus et delectus.
+                </p>
+                <div class="card-footer " style="background-color:  rgb(241, 241, 241);">
+                  <b>CATEGORY 1, SUBCATEGORY 2, COUNTRY 1
+                  </b> 
+                  <button class="btn btn-dark float-end" >
+                    <b>+ 
+                    </b>Read more
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!--Card 1-->
+            <div class="card mt-3 " style="background-color: rgb(241, 241, 241);">
+              <div class="card-header">
+                <div>
+                  Special title treatment 
+                  <p class="card-subtitle text-muted float-end">
+                    <script>
+                      var f = new Date();
+                      document.write(f.getDate() + "/" + (f.getMonth() + 1) + "/" + f.getFullYear());
+                    </script>
+                  </p>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste illum praesentium odit
+                  animi tenetur quidem aliquid ea illo, minima aspernatur perferendis porro rerum iusto, incidunt quae
+                  reprehenderit temporibus et delectus.
+                </p>
+                <div class="card-footer " style="background-color:  rgb(241, 241, 241);">
+                  <b>CATEGORY 1, SUBCATEGORY 2, COUNTRY 1
+                  </b> 
+                  <button class="btn btn-dark float-end">
+                    <b>+ 
+                    </b>Read more
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!--Card 1-->
+            <div class="card mt-3 " style="background-color: rgb(241, 241, 241);">
+              <div class="card-header">
+                <div>
+                  Special title treatment 
+                  <p class="card-subtitle text-muted float-end">
+                    <script>
+                      var f = new Date();
+                      document.write(f.getDate() + "/" + (f.getMonth() + 1) + "/" + f.getFullYear());
+                    </script>
+                  </p>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste illum praesentium odit
+                  animi tenetur quidem aliquid ea illo, minima aspernatur perferendis porro rerum iusto, incidunt quae
+                  reprehenderit temporibus et delectus.
+                </p>
+                <div class="card-footer " style="background-color:  rgb(241, 241, 241);">
+                  <b>CATEGORY 1, SUBCATEGORY 2, COUNTRY 1
+                  </b> 
+                  <button class="btn btn-dark float-end">
+                    <b>+ 
+                    </b>Read more
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!--Card 1-->
+            <div class="card mt-3 " style="background-color: rgb(241, 241, 241);">
+              <div class="card-header">
+                <div>
+                  Special title treatment 
+                  <p class="card-subtitle text-muted float-end">
+                    <script>
+                      var f = new Date();
+                      document.write(f.getDate() + "/" + (f.getMonth() + 1) + "/" + f.getFullYear());
+                    </script>
+                  </p>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste illum praesentium odit
+                  animi tenetur quidem aliquid ea illo, minima aspernatur perferendis porro rerum iusto, incidunt quae
+                  reprehenderit temporibus et delectus.
+                </p>
+                <div class="card-footer " style="background-color:  rgb(241, 241, 241);">
+                  <b>CATEGORY 1, SUBCATEGORY 2, COUNTRY 1
+                  </b> 
+                  <button class="btn btn-dark float-end">
+                    <b>+ 
+                    </b>Read more
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Card 1-->
+          <div class="card mt-3 " style="background-color: rgb(241, 241, 241);">
+            <div class="card-header">
+              <div>
+                Special title treatment 
+                <p class="card-subtitle text-muted float-end">
+                  <script>
+                    var f = new Date();
+                    document.write(f.getDate() + "/" + (f.getMonth() + 1) + "/" + f.getFullYear());
+                  </script>
+                </p>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste illum praesentium odit
+                animi tenetur quidem aliquid ea illo, minima aspernatur perferendis porro rerum iusto, incidunt quae
+                reprehenderit temporibus et delectus.
+              </p>
+              <div class="card-footer " style="background-color:  rgb(241, 241, 241);">
+                <b>CATEGORY 1, SUBCATEGORY 2, COUNTRY 1
+                </b> 
+                <button class="btn btn-dark float-end">
+                  <b>+ 
+                  </b>Read more
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Card 1-->
+      </div>
+    </div>
+    </div>
+  </div>
+<!--JS-->
+<script src="js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+        crossorigin="anonymous">
+</script>
+<script src="js/bootstrap.js">
+</script>
+</body>
+</html>
